@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+main{
+  background-color:#ddd;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 50px auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.news {
+  height: 100px;
+
+
+  // overflow: scroll;
+  overflow: auto;
+
+  // 慣性スクロール
+  -webkit-overflow-scrolling: touch;
+}

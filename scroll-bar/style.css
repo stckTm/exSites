@@ -1,0 +1,14 @@
+main {
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 50px auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.news {
+  height: 100px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}/*# sourceMappingURL=style.css.map */

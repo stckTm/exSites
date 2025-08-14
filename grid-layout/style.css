@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+body {
+  min-height: 100vh;
+  display: grid;
+}
+.grid {
+  display: grid;
+  grid-template:
+    "head head" 100px
+    "side main " 1fr
+    "foot foot" 80px
+    / 240px 1fr;
+}
+
+.item {
+  border: 1px solid #000;
+  padding: 1rem;
+}
+
+.header{
+  grid-area: head;
+}
+
+.side {
+  grid-area: side;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: foot;
+}

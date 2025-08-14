@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.container {
+  width: 1000px;
+  height: 1000px;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  // opacity: 1;
+  // position: relative;
+
+  // img, p {
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   z-index: -1090;
+  // }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img{
+    position: absolute;
+    z-index: -50;
+  }
+
+  p{
+    font-size: 40px;
+    font-weight: 700;
+    color: red;
+    text-shadow: 5px 0px 5px #fff;
+  }
+
+
+}

@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:0;
+
+    font-family: "Poppins", sans-serif;
+    // font-weight: 100;
+    font-style: normal;
+    color: #fff;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1750688650545-d9e2a060dfe8?q=80&w=2812&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    &::after{
+        content: "";
+        position: absolute;
+        background:#000;
+        height: 500vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+    }
+}
+
+.title{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+    opacity: 0;
+    font-size: 2rem;
+
+    >h1 > span{
+        color: #ff0000;
+        font-weight: 400;
+    }
+
+    &.active{
+        opacity: 1;
+        transition: all 0.3s;
+    }
+}
+
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 50;
+
+    h2{
+        position: absolute;
+        font-size: 2.3rem;
+        top: 70%;
+        z-index: 50;
+        letter-spacing: 2px;
+        opacity: 0;
+        transition: all 0.2s;
+
+        &.active{
+            opacity: 1;
+            transition: opacity 3s;
+        }
+    }
+
+}
+
+.wrapper{
+    position: relative;
+    top: 40%;
+    height: 40%;
+    width: 1px;
+    overflow: hidden;
+    opacity: 0;
+    // background-color: #ff0000;
+
+    &.active{
+        width: 40vw;
+        opacity: 1;
+        transition: opacity 1s, width 2s;
+    }
+
+    &.title.active{
+        transform: scale(1);
+        transition: 1s ease-out;
+    }
+
+    &__img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40vw;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        transform: scale(1.6);
+
+    }
+}

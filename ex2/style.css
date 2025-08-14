@@ -1,0 +1,146 @@
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #383e45;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  color: #24292e;
+  font-size: 14.4px;
+  font-family: Hiragino Kaku Gothic ProN;
+  font-weight: 300;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  border-bottom: solid #383e45 1px;
+  margin-bottom: 30px;
+}
+
+.sub-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 14.4px;
+  font-weight: 300;
+}
+
+header {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  line-height: 60px;
+}
+
+.header {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  padding: 0px 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 120px;
+  height: 40px;
+}
+.header__nav {
+  display: flex;
+}
+.header__nav li {
+  margin-left: 30px;
+}
+.header__nav a {
+  color: #24292e;
+}
+
+.wrapper {
+  width: 100%;
+  padding-top: 60px;
+  margin-bottom: 80px;
+}
+.wrapper img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  padding: 0 15px;
+}
+section img {
+  margin-bottom: 10px;
+}
+
+.about .sub-title {
+  margin-bottom: 10px;
+}
+.about__containt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__containt img {
+  margin-top: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.bicycle {
+  text-align: center;
+}
+.bicycle__containt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+.bicycle__containt__item {
+  margin-bottom: 30px;
+}
+.bicycle__containt img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  text-align: center;
+  font-size: 8px;
+  font-weight: 300;
+  color: #383e45;
+  padding-bottom: 10px;
+}
+
+/* pc */
+@media (min-width: 600px) {
+  .about__containt {
+    flex-direction: row;
+  }
+  .about__containt img {
+    margin-right: 30px;
+  }
+  .bicycle__containt {
+    flex-flow: row wrap;
+    gap: 16px;
+  }
+  .bicycle__containt__item {
+    flex: 1 0 30%;
+  }
+}/*# sourceMappingURL=style.css.map */
