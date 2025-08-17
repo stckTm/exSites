@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #4e4e4e;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  z-index: 10;
+}
+
+.container .fixed {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 80px;
+  padding: 600px 0;
+  padding: 30px;
+}
+.container .fixed:nth-child(1) {
+  margin-top: 80px;
+}
+.container .fixed h2 {
+  margin-top: 20px;
+}
+.container .fixed:nth-of-type(2n) {
+  padding: 80px;
+  text-align: center;
+  color: white;
+  background-image: url(https://picsum.photos/800/800);
+}
+.container .fixed:nth-of-type(odd) {
+  background-color: #fff;
+}
+.container .fixed:last-child {
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  section.fixed {
+    position: relative !important;
+    top: 70px;
+  }
+}/*# sourceMappingURL=style.css.map */
